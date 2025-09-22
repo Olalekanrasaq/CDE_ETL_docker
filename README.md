@@ -22,3 +22,7 @@ The project contains the following files:
   - converting all column names to lower case
   - selecting only interested columns of data
 - Loading: The transformed data was loaded into a postgres database.
+
+Below is the architectural diagram of the pipeline:
+
+![etl_diagram](./etl_architecture.png)
