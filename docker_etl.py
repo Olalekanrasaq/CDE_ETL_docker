@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 import psycopg2
 import os
 
-# a url to a size CSV file
+# a url to a CSV file
 url = "https://www.stats.govt.nz/assets/Uploads/Annual-enterprise-survey/Annual-enterprise-survey-2023-financial-year-provisional/Download-data/annual-enterprise-survey-2023-financial-year-provisional.csv"
 
 # postgres connection details from environment variables
@@ -21,7 +21,7 @@ conn = create_engine(conn_string) # create a SQLAlchemy engine
 db_table = "finance_data"
 
 def extract_data(url: str) -> pd.DataFrame:
-    """Extract data from a CSV file located at the given URL and convert to dataframe."""
+    """Extract data from the CSV file located at the specified URL and convert to dataframe."""
     try:
         data = pd.read_csv(url)
         print("Data extraction successful.")
