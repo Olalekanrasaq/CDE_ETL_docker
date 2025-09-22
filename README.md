@@ -6,7 +6,7 @@ In this project, a ETL pipeline was written with python, that extract data from 
 
 - Have docker installed on your system
 - Clone the project repository into your system
-- Open a bash terminal from the project directory and run the [bash script](./etl_script.sh) `etl_script.sh`
+- Open a bash terminal from the project directory and run the `etl_script.sh` [bash script](./etl_script.sh) 
 
 # Project Details
 
